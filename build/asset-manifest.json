@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.72b9109c.css",
+    "main.js": "/static/js/main.ee52fed6.js",
+    "static/js/453.ed3810f9.chunk.js": "/static/js/453.ed3810f9.chunk.js",
+    "static/media/background.png": "/static/media/background.f335a61934cf91404a02.png",
+    "static/media/left.png": "/static/media/left.38ad6d4e3bce1069bbce.png",
+    "static/media/PretendardVariable.woff2": "/static/media/PretendardVariable.2bc582461caf4e05b51d.woff2",
+    "static/media/right.png": "/static/media/right.e08165a70bcd9e0af2f7.png",
+    "static/media/OutfitVariableFont_wght1.ttf": "/static/media/OutfitVariableFont_wght1.7d17abd5c1a78120ae80.ttf",
+    "static/media/FuturaCyrillicMedium.ttf": "/static/media/FuturaCyrillicMedium.8c2b829a94e8be079974.ttf",
+    "static/media/caliverse_logo.png": "/static/media/caliverse_logo.a89f7c3eac29eb9b1591.png",
+    "index.html": "/index.html",
+    "main.72b9109c.css.map": "/static/css/main.72b9109c.css.map",
+    "main.ee52fed6.js.map": "/static/js/main.ee52fed6.js.map",
+    "453.ed3810f9.chunk.js.map": "/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.72b9109c.css",
+    "static/js/main.ee52fed6.js"
+  ]
+}

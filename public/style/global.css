@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'Pretendard'; /* 원하는 폰트 이름 */
+    src: url('../public/font/PretendardVariable.woff2') format('woff'); /* 폰트 파일 경로 */
+    font-weight: normal;
+    font-style: normal;
+}

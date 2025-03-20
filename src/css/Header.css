@@ -1,0 +1,123 @@
+/* 헤더 수정 */
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  height: 88px;
+  padding: 0 32px;
+}
+.hamburger-button {
+  display: none;
+}
+.logo {
+  width: 378px;
+  height: 26px;
+}
+.headerright {
+  display: flex;
+  gap: 27px;
+  font-size: 16px;
+  align-items: center;
+  color: white;
+}
+.language {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  font-family: "Pretendard"; /* 로드한 폰트를 사용 */
+}
+.headericon {
+  width: 18px;
+  height: 18px;
+}
+.MuiTypography-root {
+  font-family: "Pretendard" !important; /* 임포탄트는 보다 권한 높은거임 mui 에서 저 root 앞에 있는게 고정적인 클래스라서 저걸로 불러온 것.*/
+}
+.Myinventory {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+}
+/* 안에 컨텐츠 넣는거 스타일 정의의 */
+.content {
+  text-align: center;
+}
+/* 메인이미지 스타일 정의 */
+.leftright {
+  margin-top: 83px;
+}
+.leftright img {
+  width: 396px;
+  height: 508px;
+}
+/* 모바일 (600px 이하) */
+@media (max-width: 600px) {
+  .headerright {
+    display: none; /* 모바일에서는 기본적으로 숨김 */
+  }
+
+  /* 햄버거 메뉴 버튼 보이기 */
+  .hamburger-button {
+    display: block; /* 작은 화면에서만 보이도록 */
+    color: white;
+  }
+
+  /* 메뉴 항목을 햄버거 메뉴에서 보이게 하기 */
+  .MuiMenu-paper {
+    background-color: #0e0d0d; /* 메뉴 배경색 */
+    border-radius: 10px;
+    color: white;
+  }
+  /* 스크롤바 기본 설정 태블릿에서*/
+  ::-webkit-scrollbar {
+    width: 20px; /* 스크롤바의 너비 */
+    background: rgba(255, 255, 255, 0.5);
+  }
+  /* 스크롤 트랙 배경을 투명하게 */
+  ::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  /* 스크롤바 thumb에 배경 이미지를 넣기 */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    opacity: 0.5; /* 배경을 투명하게 설정 */
+  }
+}
+/* 태블릿 (601px ~ 1024px) */
+@media (min-width: 601px) and (max-width: 1111px) {
+  .headerright {
+    display: none; /* 태블릿에서도 기본적으로 숨김 */
+  }
+
+  /* 햄버거 메뉴 버튼 보이기 */
+  .hamburger-button {
+    display: block; /* 작은 화면에서만 보이도록 */
+  }
+
+  /* 메뉴 항목을 햄버거 메뉴에서 보이게 하기 */
+  .MuiMenu-paper {
+    background-color: #0e0d0d;
+    border-radius: 10px;
+    color: white;
+  }
+  /* 스크롤바 기본 설정 태블릿에서*/
+  ::-webkit-scrollbar {
+    width: 20px; /* 스크롤바의 너비 */
+    background: rgba(255, 255, 255, 0.5);
+  }
+  /* 스크롤 트랙 배경을 투명하게 */
+  ::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  /* 스크롤바 thumb에 배경 이미지를 넣기 */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    opacity: 0.5; /* 배경을 투명하게 설정 */
+  }
+}

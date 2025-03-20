@@ -1,0 +1,175 @@
+/* --------------------------------------- */
+/* schedule */
+.schedule {
+  color: white;
+  font-family: "Pretendard";
+}
+/* date */
+.date {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  column-gap: 34px;
+  margin-top: 27px;
+}
+.datetext {
+  color: white;
+}
+
+/* 기본 스타일 */
+.box {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.boxcontainer {
+  display: flex;
+  flex-wrap: wrap; /* 화면 크기가 줄어들면 아이템들이 줄 바꿈 되도록 */
+  justify-content: center;
+  gap: 10px; /* 박스 간의 간격 */
+  width: 100%;
+}
+
+.gadna{
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1000px; /* 각 박스가 가로폭에 맞춰 자동으로 늘어날 수 있게 */
+}
+
+.boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%; /* 전체 넓이를 100%로 설정 */
+  background-color: transparent;
+  border-radius: 10px;
+  color: white;
+  border: 1px solid #333;
+  height: 144px;
+  justify-content: center;
+}
+.icon_text{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 51px;
+  gap: 31px;
+}
+.icon {
+  width: 45px;
+  height: 52px;
+}
+
+.titledesc {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.title {
+  font-size: 20px;
+  font-family: "outfit", sans-serif;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.desc1{
+  font-size: 16px;
+  color: #ffffff50;
+}
+
+.desc2 {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.desc2 {
+  font-size: 11px;
+  color: #6a7cff;
+}
+.imgs {
+  width: auto;
+  height: auto;
+}
+
+/* Media Queries: 모바일 화면에서 반응형으로 수정 */
+@media (max-width: 600px) {
+  .pioneer-text {
+    display: block; /* 화면이 좁으면 아래로 내려가도록 설정 */
+  }
+  .imgs {
+    width: 193px !important; /* 이미지의 너비 설정, 우선순위를 높임 */
+    height: 248px !important; /* 이미지의 높이 설정, 우선순위를 높임 */
+  }
+
+  /* 부모 요소의 크기도 조정 */
+  .leftright {
+    display: flex;
+    justify-content: center; /* 이미지들이 수평으로 정렬되도록 설정 */
+    gap: 4px; /* 간격을 두어 정렬 */
+  }
+  .date {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .box {
+    padding: 20px; /* 화면이 작아지면 padding을 적게 설정 */
+  }
+
+  .boxcontainer {
+    flex-direction: column; /* 작은 화면에서는 세로로 쌓이게 */
+    align-items: center;
+  }
+
+  .boxes {
+    width: 390;
+  }
+  .icon {
+    width: 30px;
+    height: 30px; /* 아이콘 크기를 화면 크기에 맞게 축소 */
+  }
+
+  .title {
+    font-size: 18px; /* 작은 화면에서는 글씨 크기를 줄임 */
+  }
+
+  .desc1,
+  .desc2 {
+    font-size: 12px; /* 설명 텍스트 크기를 줄임 */
+  }
+}
+
+/* --------------------------------- 참가자격*/
+.dlrjs {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 60px;
+}
+.module-border-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  background: linear-gradient(-28deg, #e025ce, #00031a, #4aed52);
+  padding: 3px;
+  width: 1000px;
+  border-radius: 10px;
+  margin-bottom: 100px;
+}
+.module {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  height: 186px;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #0e0d0d;
+}
