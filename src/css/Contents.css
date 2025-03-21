@@ -207,12 +207,19 @@ p {
   background-color: #0e0d0d;
   letter-spacing: 1px;
 }
-
-
+.module_text1 {
+  font-size: 16px;
+  color: #ffffff70;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.module_text2 {
+  display: none;
+}
 
 /* Media Queries: 모바일 화면에서 반응형으로 수정 */
 @media (max-width: 600px) {
-  .content{
+  .content {
     margin-top: 50px;
   }
   .content .maindesc1 {
@@ -225,7 +232,7 @@ p {
     flex-direction: column;
     text-align: center;
     color: #9a9a9a;
-    font-family: 'futura';
+    font-family: "futura";
     font-size: 13px;
     font-weight: 500;
     margin-top: 6px;
@@ -242,7 +249,7 @@ p {
     text-align: center;
     font-size: 18px;
   }
-  .datetext{
+  .datetext {
     font-size: 14px;
   }
   .leftright {
@@ -264,7 +271,7 @@ p {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap:10px;
+    gap: 10px;
   }
   .qkdqjq {
     color: white;
@@ -272,8 +279,8 @@ p {
     letter-spacing: 6px;
     font-weight: 600;
     display: flex;
-    flex-wrap: wrap;  /* 텍스트가 자동으로 줄 바꿈됨 */
-    gap: 10px;  /* span 간격 조절 */
+    flex-wrap: wrap; /* 텍스트가 자동으로 줄 바꿈됨 */
+    gap: 10px; /* span 간격 조절 */
   }
   .boxcontainer {
     flex-direction: column; /* 작은 화면에서는 세로로 쌓이게 */
@@ -307,7 +314,7 @@ p {
     padding-left: 25px;
     box-sizing: border-box;
   }
-  
+
   .icon {
     width: 45px;
     height: 52px; /* 아이콘 크기를 화면 크기에 맞게 축소 */
@@ -357,7 +364,16 @@ p {
     width: 100%;
     background-color: #0e0d0d;
   }
-  
+  .module_text1 {
+    display: none;
+  }
+  .module_text2 {
+    display: flex;
+    font-size: 16px;
+    color: #ffffff70;
+    font-weight: 600;
+    margin-top: 10px;
+  }
 }
 
 @media (min-width: 600px) and (max-width: 1024px) {
@@ -382,7 +398,7 @@ p {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap:10px;
+    gap: 10px;
   }
   .gadna {
     display: flex;
@@ -419,5 +435,13 @@ p {
     width: 100%;
     background-color: #0e0d0d;
   }
-  
+  .module_text1 {
+    font-size: 16px;
+    color: #ffffff70;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  .module_text2 {
+    display: none;
+  }
 }

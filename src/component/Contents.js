@@ -25,10 +25,10 @@ function Contents() {
             </div>
             <div className="maindesc2">
                 <p>
-                    CALIVERSE Pioneer Collective is an NFT collection designed to 
-                    support and empower pioneers and creators of CALIVERSE. Holding a 
-                    CALIVERSE Pioneer Collective NFT doesn't just grant access to this 
-                    brand-new universe; it offers an exclusive sneak peek at the exciting 
+                    CALIVERSE Pioneer Collective is an NFT collection designed to
+                    support and empower pioneers and creators of CALIVERSE. Holding a
+                    CALIVERSE Pioneer Collective NFT doesn't just grant access to this
+                    brand-new universe; it offers an exclusive sneak peek at the exciting
                     lineup of future services.
                 </p>
             </div>
@@ -162,8 +162,12 @@ function Contents() {
                             <p style={{ fontSize: '25px', fontWeight: '600' }}>
                                 참가자격
                             </p>
-                            <p style={{ fontSize: '16px', color: '#ffffff70', fontWeight: '600', marginTop: '10px' }}>
+                            <p className='module_text1'>
                                 CALIVERSE Pioneer NFT 민팅 이벤트는 당첨자만 참여하실 수 있습니다.
+                            </p>
+                            <p className='module_text2'>
+                                These portraits encapsulate the spirit of those trailblazers who
+                                constantly seek new possibilities, never content with the present.
                             </p>
                         </div>
                     </div>
