@@ -2,9 +2,11 @@
 import React from 'react';
 import '../App.css';
 import '../css/Contents.css';
-import { Typography, Box, Button } from '@mui/material';
+import { Box, Button } from '@mui/material';
 import left from '../img/left.png';
 import right from '../img/right.png';
+import left_mobile from '../img/left_mobile.png';
+import right_mobile from '../img/right_mobile.png';
 import icon1 from '../img/icon1.png';
 import icon2 from '../img/icon2.png';
 import icon3 from '../img/icon3.png';
@@ -12,33 +14,35 @@ import icon4 from '../img/icon4.png';
 function Contents() {
     return (
         <div className='content'>
-            <Typography
-                sx={{
-                    color: 'white',
-                    letterSpacing: '7px',
-                    fontSize: '35px',
-                    fontFamily: 'futura !important',
-                    marginTop: '130px',
-                    textAlign: 'center', // 중앙 정렬
-                }}>
+            <p className='maintitle'>
                 <span style={{ whiteSpace: 'nowrap' }}>CALIVERSE</span> {/* CALIVERSE는 한 줄로 유지 */}
                 <span className='pioneer-text'>PIONEER NFT</span> {/* PIONEER NFT는 아래로 내려감 */}
-            </Typography>
-            <div className="maindesc">
-                <Typography> CALIVERSE Pioneer NFT는 칼리버스를 개척할 </Typography>
-                <Typography sx={{marginLeft:'4px'}}> 선구자와 크리에이터들을 지원하기 위한 NFT 입니다.</Typography>
+            </p>
+
+            <div className="maindesc1">
+                <p> CALIVERSE Pioneer NFT는 칼리버스를 개척할 </p>
+                <p style={{ marginLeft: '4px' }}> 선구자와 크리에이터들을 지원하기 위한 NFT 입니다.</p>
+            </div>
+            <div className="maindesc2">
+                <p>
+                    CALIVERSE Pioneer Collective is an NFT collection designed to 
+                    support and empower pioneers and creators of CALIVERSE. Holding a 
+                    CALIVERSE Pioneer Collective NFT doesn't just grant access to this 
+                    brand-new universe; it offers an exclusive sneak peek at the exciting 
+                    lineup of future services.
+                </p>
             </div>
             <div className='leftright'>
                 <img src={left} className='imgs' />
                 <img src={right} className='imgs' />
             </div>
             <div className='schedule'>
-                <Typography className='schedule_title'>
+                <p className='schedule_title'>
                     MINTING EVENT SCHEDULE
-                </Typography>
+                </p>
                 <div className='date'>
-                    <Typography className='datetext' style={{ color: 'white' }}>시작 <span style={{ color: '#8E8E8E' }}>2024년 09월 23일 (월) 17:00 (KST)</span></Typography>
-                    <Typography className='datetext' style={{ color: 'white' }}>종료 <span style={{ color: '#8E8E8E' }}>2024년 12월 23일 (월) 17:00 (KST)</span></Typography>
+                    <p className='datetext' >시작 <span style={{ color: '#8E8E8E' }}>2024년 09월 23일 (월) 17:00 (KST)</span></p>
+                    <p className='datetext' >종료 <span style={{ color: '#8E8E8E' }}>2024년 12월 23일 (월) 17:00 (KST)</span></p>
                 </div>
                 <Button sx={{
                     width: 293,
@@ -50,21 +54,18 @@ function Contents() {
                     color: '#22ee9f',
                     fontSize: 20,
                     fontWeight: '800',
-                    marginTop: '30px'
+                    fontFamily: 'Pretendard !important'
                 }}>
                     민팅 준비중
                 </Button>
             </div>
             <div className='box'>
-                <Typography sx={{
-                    color: 'white',
-                    fontSize: '23px',
-                    letterSpacing: '3px',
-                    fontWeight: '600',
-                    marginTop: '127px'
-                }}>
-                    CALIVERSE PIONEER NFT 민팅 참여방법
-                </Typography>
+                <div className='qkdqjq_box'>
+                    <p className='qkdqjq'>
+                        <span>CALIVERSE PIONEER NFT</span>
+                        <span className='pioneer-text'>민팅 참여방법</span>
+                    </p>
+                </div>
                 <div className="boxcontainer">
                     <div className='gadna'>
                         <Box className="boxes">
@@ -72,23 +73,21 @@ function Contents() {
                                 <img className='icon' src={icon1} />
                                 <div className='titledesc'>
                                     <div className='title'>
-                                        <Typography sx={{
-                                            fontSize: '20px',
-                                            fontFamily: 'outfit !important',
-                                            fontWeight: '600'
-                                        }}>
+                                        <p>
                                             SIGN IN & VERIFY
-                                        </Typography>
+                                        </p>
                                     </div>
-                                    <div className='desc1'>
-                                        <Typography >
-                                            회원 가입 후  당첨된 지갑 주소를 연결해 주세요.
-                                        </Typography>
-                                    </div>
-                                    <div className='desc2'>
-                                        <Typography sx={{ fontSize: '11px' }}>
-                                            민팅 시 가스비가 발생됩니다.  충분한 이더{"(ETH)"}를 넣은 후 민팅을 진행해 주세요.
-                                        </Typography>
+                                    <div className='desc_'>
+                                        <div className='desc1'>
+                                            <p >
+                                                회원 가입 후  당첨된 지갑 주소를 연결해 주세요.
+                                            </p>
+                                        </div>
+                                        <div className='desc2'>
+                                            <p>
+                                                민팅 시 가스비가 발생됩니다.  충분한 이더{"(ETH)"}를 넣은 후 민팅을 진행해 주세요.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -98,23 +97,21 @@ function Contents() {
                                 <img className='icon' src={icon2} />
                                 <div className='titledesc'>
                                     <div className='title'>
-                                        <Typography sx={{
-                                            fontSize: '20px',
-                                            fontFamily: 'outfit !important',
-                                            fontWeight: '600'
-                                        }}>
+                                        <p>
                                             CHECK & SCHEDULE
-                                        </Typography>
+                                        </p>
                                     </div>
-                                    <div className='desc1'>
-                                        <Typography >
-                                            Event Schedule을 확인해 주세요.
-                                        </Typography>
-                                    </div>
-                                    <div className='desc2'>
-                                        <Typography sx={{ fontSize: '11px' }}>
-                                            민팅 기간이 지나면 민팅이 불가하니 유의해 주세요
-                                        </Typography>
+                                    <div className='desc_'>
+                                        <div className='desc1'>
+                                            <p >
+                                                Event Schedule을 확인해 주세요.
+                                            </p>
+                                        </div>
+                                        <div className='desc2'>
+                                            <p>
+                                                민팅 기간이 지나면 민팅이 불가하니 유의해 주세요
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -124,18 +121,16 @@ function Contents() {
                                 <img className='icon' src={icon3} />
                                 <div className='titledesc'>
                                     <div className='title'>
-                                        <Typography sx={{
-                                            fontSize: '20px',
-                                            fontFamily: 'outfit !important',
-                                            fontWeight: '600'
-                                        }}>
+                                        <p>
                                             MINT
-                                        </Typography>
+                                        </p>
                                     </div>
-                                    <div className='desc1'>
-                                        <Typography >
-                                            {'<Mint>'} 버튼을 클릭 후 민팅을 진행해 주세요.
-                                        </Typography>
+                                    <div className='desc_'>
+                                        <div className='desc1'>
+                                            <p >
+                                                {'<Mint>'} 버튼을 클릭 후 민팅을 진행해 주세요.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -145,18 +140,16 @@ function Contents() {
                                 <img className='icon' src={icon4} />
                                 <div className='titledesc'>
                                     <div className='title'>
-                                        <Typography sx={{
-                                            fontSize: '20px',
-                                            fontFamily: 'outfit !important',
-                                            fontWeight: '600'
-                                        }}>
+                                        <p>
                                             COMPLETE
-                                        </Typography>
+                                        </p>
                                     </div>
-                                    <div className='desc1'>
-                                        <Typography >
-                                            {"[My Inventory]"}에서 민팅된 NFT를 확인해 주세요.
-                                        </Typography>
+                                    <div className='desc_'>
+                                        <div className='desc1'>
+                                            <p >
+                                                {"[My Inventory]"}에서 민팅된 NFT를 확인해 주세요.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -166,12 +159,12 @@ function Contents() {
                 <div className='dlrjs'>
                     <div className="module-border-wrap">
                         <div className="module">
-                            <Typography sx={{ fontSize: '25px' }}>
+                            <p style={{ fontSize: '25px', fontWeight: '600' }}>
                                 참가자격
-                            </Typography>
-                            <Typography sx={{ fontSize: '16px', color: '#ffffff50' }}>
+                            </p>
+                            <p style={{ fontSize: '16px', color: '#ffffff70', fontWeight: '600', marginTop: '10px' }}>
                                 CALIVERSE Pioneer NFT 민팅 이벤트는 당첨자만 참여하실 수 있습니다.
-                            </Typography>
+                            </p>
                         </div>
                     </div>
                 </div>

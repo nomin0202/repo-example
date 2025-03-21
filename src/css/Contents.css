@@ -1,13 +1,26 @@
 /* --------------------------------------- */
+p {
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
 .content {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
-  font-family: 'Pretendard' !important;
+  font-family: "Pretendard";
+  margin-top: 121px;
 }
-.maindesc {
+.maintitle {
+  color: white;
+  letter-spacing: 7px;
+  font-size: 35px;
+  font-family: "futura";
+  text-align: center;
+}
+.maindesc1 {
   color: #9a9a9a;
   font-size: 16px;
   letter-spacing: 0;
@@ -16,7 +29,10 @@
   width: 90%;
   display: flex;
   justify-content: center;
-  text-align: center
+  text-align: center;
+}
+.maindesc2 {
+  display: none;
 }
 /* schedule */
 .schedule {
@@ -25,13 +41,13 @@
   flex-direction: column;
   align-items: center;
   width: 90%; /* 화면 너비의 90% 사용 */
+  margin-top: 96px;
 }
 .schedule_title {
-  font-family: 'Pretendard' !important;
-  font-size: 23px !important;
-  font-weight: 800 !important;
-  letter-spacing: 0.1em !important;
-  margin-top: 96px !important;
+  font-family: "Pretendard";
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
   color: white;
   text-align: center;
 }
@@ -42,17 +58,17 @@
   flex-direction: row;
   column-gap: 34px;
   margin-top: 27px;
+  margin-bottom: 30px;
 }
 .datetext {
   color: white;
+  gap: 20px;
 }
 
 /* 기본 스타일 */
 .box {
   width: 100%; /* 화면 너비의 90% 사용 */
   max-width: 1000px; /* 최대 크기 제한 */
-  height: auto; /* 내용에 맞게 자동 조정 */
-  padding: 20px; /* 내부 여백 */
   box-sizing: border-box; /* 패딩 포함한 전체 크기 유지 */
   /* background-color: white; */
   border-radius: 10px; /* 둥근 모서리 */
@@ -60,6 +76,23 @@
   flex-direction: column; /* 요소를 세로로 정렬 */
   align-content: center;
   align-items: center; /* 가운데 정렬 */
+  margin-bottom: 151px;
+}
+.qkdqjq_box {
+  margin-top: 127px;
+  display: flex;
+  width: 90%;
+  text-align: center;
+}
+.qkdqjq {
+  width: 100%;
+  color: white;
+  font-family: "Pretendard";
+  font-size: 23px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
 }
 .boxcontainer {
   display: flex;
@@ -76,6 +109,8 @@
   justify-content: center;
   align-items: center;
   width: 100%; /* 각 박스가 가로폭에 맞춰 자동으로 늘어날 수 있게 */
+  height: 606px;
+  margin-top: 41px;
 }
 
 .boxes {
@@ -96,6 +131,7 @@
   align-items: center;
   margin-left: 51px;
   gap: 31px;
+  height: 100%;
 }
 .icon {
   width: 45px;
@@ -103,59 +139,111 @@
 }
 
 .titledesc {
+  width: 100%;
+  height: 70%;
+  box-sizing: border-box;
   display: flex;
-  justify-content: left;
+  justify-content: space-evenly;
   flex-direction: column;
   align-items: flex-start;
 }
 
 .title {
+  margin: 0;
   font-size: 20px;
   font-family: "outfit", sans-serif;
   font-weight: 600;
-  margin-bottom: 10px;
+  letter-spacing: 0;
 }
 
 .desc1 {
   font-size: 16px;
   color: #ffffff50;
-}
-
-.desc2 {
-  font-size: 14px;
-  color: #fff;
-  margin-bottom: 10px;
+  letter-spacing: 0;
 }
 
 .desc2 {
   font-size: 11px;
   color: #6a7cff;
+  letter-spacing: 0;
 }
+
 .leftright {
+  margin-top: 83px;
   display: flex; /* 이미지를 가로로 배치 */
   justify-content: center; /* 이미지들 중앙 정렬 */
   width: 90%; /* 부모 요소의 너비 90%로 설정 */
   max-width: 792px;
+  gap: 5px;
 }
 .imgs {
   width: 50%;
 }
+/* --------------------------------- 참가자격*/
+.dlrjs {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 60px;
+}
+.module-border-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  background: linear-gradient(-28deg, #e025ce, #00031a, #4aed52);
+  padding: 3px;
+  width: 100%;
+  border-radius: 10px;
+}
+.module {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  height: 186px;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #0e0d0d;
+  letter-spacing: 1px;
+}
+
+
+
 /* Media Queries: 모바일 화면에서 반응형으로 수정 */
 @media (max-width: 600px) {
-  .content .maindesc{
+  .content{
+    margin-top: 50px;
+  }
+  .content .maindesc1 {
+    display: none;
+  }
+  .content .maindesc2 {
+    width: 90%;
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
+    color: #9a9a9a;
+    font-family: 'futura';
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 6px;
+    line-height: 22px;
   }
-  .schedule_title{
-    font-family: 'Pretendard';
-    font-size: '18px';
+  .schedule {
+    margin-top: 67px;
+  }
+  .schedule_title {
+    font-family: "Pretendard";
     font-weight: 600;
     letter-spacing: 0.1em;
-    margin-top: 67px;
     color: white;
     text-align: center;
+    font-size: 18px;
+  }
+  .datetext{
+    font-size: 14px;
   }
   .leftright {
     display: flex; /* 이미지를 가로로 배치 */
@@ -176,31 +264,104 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    gap:10px;
+  }
+  .qkdqjq {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 6px;
+    font-weight: 600;
+    display: flex;
+    flex-wrap: wrap;  /* 텍스트가 자동으로 줄 바꿈됨 */
+    gap: 10px;  /* span 간격 조절 */
   }
   .boxcontainer {
     flex-direction: column; /* 작은 화면에서는 세로로 쌓이게 */
     align-items: center;
+    height: 947px;
+  }
+  .gadna {
+    display: flex;
+    gap: 9px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%; /* 각 박스가 가로폭에 맞춰 자동으로 늘어날 수 있게 */
+    height: 100%;
   }
   .pioneer-text {
     display: block; /* 화면이 좁으면 아래로 내려가도록 설정 */
   }
   .boxes {
-    width: 100%;
+    width: 390;
+    height: 230px;
   }
+  .icon_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    gap: 0;
+    width: 100%;
+    height: 80%;
+    padding-left: 25px;
+    box-sizing: border-box;
+  }
+  
   .icon {
-    width: 30px;
-    height: 30px; /* 아이콘 크기를 화면 크기에 맞게 축소 */
+    width: 45px;
+    height: 52px; /* 아이콘 크기를 화면 크기에 맞게 축소 */
+    margin-top: 20px;
+  }
+  .titledesc {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
   }
   .title {
-    font-size: 18px; /* 작은 화면에서는 글씨 크기를 줄임 */
+    font-size: 20px; /* 작은 화면에서는 글씨 크기를 줄임 */
   }
-  .desc1,
+  .desc1 {
+    font-size: 16px; /* 설명 텍스트 크기를 줄임 */
+    margin-top: 10px;
+  }
   .desc2 {
-    font-size: 12px; /* 설명 텍스트 크기를 줄임 */
+    font-size: 11px;
   }
+  .dlrjs {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-top: 60px;
+  }
+  .module-border-wrap {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background: linear-gradient(-28deg, #e025ce, #00031a, #4aed52);
+    padding: 3px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .module {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    height: 186px;
+    border-radius: 10px;
+    width: 100%;
+    background-color: #0e0d0d;
+  }
+  
 }
+
 @media (min-width: 600px) and (max-width: 1024px) {
-  .content .maindesc{
+  .content .maindesc1 {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -221,34 +382,42 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    gap:10px;
   }
-}
-
-/* --------------------------------- 참가자격*/
-.dlrjs {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-top: 60px;
-}
-.module-border-wrap {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  background: linear-gradient(-28deg, #e025ce, #00031a, #4aed52);
-  padding: 3px;
-  width: 1000px;
-  border-radius: 10px;
-  margin-bottom: 100px;
-}
-.module {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: white;
-  height: 186px;
-  border-radius: 10px;
-  width: 100%;
-  background-color: #0e0d0d;
+  .gadna {
+    display: flex;
+    gap: 9px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%; /* 각 박스가 가로폭에 맞춰 자동으로 늘어날 수 있게 */
+    height: 100%;
+  }
+  .dlrjs {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-top: 60px;
+  }
+  .module-border-wrap {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background: linear-gradient(-28deg, #e025ce, #00031a, #4aed52);
+    padding: 3px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .module {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    height: 186px;
+    border-radius: 10px;
+    width: 100%;
+    background-color: #0e0d0d;
+  }
+  
 }

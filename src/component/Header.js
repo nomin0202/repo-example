@@ -1,12 +1,14 @@
 /* eslint-disable */
 import React, { useState, useEffect } from "react";
 import { Box, Typography, IconButton, Menu, MenuItem, Divider } from "@mui/material";
-import {Menu as MenuIcon } from "@mui/icons-material";
+import { Menu as MenuIcon } from "@mui/icons-material";
 import logo from "../img/caliverse_logo.png";
 import star from "../img/Vector.png";
 import sum from "../img/sum.png";
 import wallet from "../img/wallet.png";
 import globe from "../img/wlrnqhs.png";
+import headerwallet from "../img/wallet_icon.png";
+
 import "../../src/App.css";
 import "../../src/css/Header.css";
 
@@ -56,13 +58,13 @@ function Header() {
                                 color: "transparent",
                                 fontFamily: "Pretendard",
                                 fontWeight: "600",
-                                whiteSpace:'nowrap'
+                                whiteSpace: 'nowrap'
                             }}>
                             My Inventory
                         </Typography>
                     </div>
                 </Box>
-                <div className="emailbutton" style={{width:'212px'}}>
+                <div className="emailbutton" style={{ width: '212px' }}>
                     <Box
                         sx={{
                             width: "auto",
@@ -85,7 +87,7 @@ function Header() {
                     >
                         <img className="headericon" src={wallet} style={{ width: "16px", height: "14px" }} alt="wallet" />
                         <Typography sx={{ overflow: "hidden", whiteSpace: "nowrap", textOverflow: "ellipsis" }}>
-                        {email}
+                            {email}
                         </Typography>
                         <img className="headericon" src={sum} style={{ width: "8px", height: "5px", paddingLeft: "7px" }} alt="sum" />
                     </Box>
@@ -99,11 +101,24 @@ function Header() {
                     <img src={sum} className="headericon" style={{ width: "7px", height: "5px" }} alt="sum" />
                 </div>
             </div>
-            <div className="hamburger-button">
-                <IconButton onClick={handleMenuClick}>
-                    <MenuIcon sx={{ color: "white" }} />
-                </IconButton>
+            <div className="header_button">
+                <div className="wallet-button">
+                    <div onClick={handleMenuClick}>
+                        <img src={headerwallet} style={{width:'18px', }}/>
+                    </div>
+                </div>
+                <div className="hamburger-button">
+                    <div onClick={handleMenuClick}>
+                        <MenuIcon/>
+                    </div>
+                </div>
             </div>
+            <Menu anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleMenuClose}>
+                <MenuItem onClick={handleMenuClose}>About</MenuItem>
+                <MenuItem onClick={handleMenuClose}>Portal</MenuItem>
+                <MenuItem onClick={handleMenuClose}>NFT</MenuItem>
+                <MenuItem onClick={handleMenuClose}>{email}</MenuItem>
+            </Menu>
             <Menu anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleMenuClose}>
                 <MenuItem onClick={handleMenuClose}>About</MenuItem>
                 <MenuItem onClick={handleMenuClose}>Portal</MenuItem>

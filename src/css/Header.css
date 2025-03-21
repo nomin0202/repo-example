@@ -8,7 +8,13 @@
   height: 88px;
   padding: 0 32px;
 }
+.header .header_button{
+  display: none;
+}
 .header .hamburger-button {
+  display: none;
+}
+.header .wallet-button {
   display: none;
 }
 .header .logo {
@@ -46,12 +52,37 @@
 
 /* 모바일 (600px 이하) */
 @media (max-width: 600px) {
+  .header{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+    height: 88px;
+    padding: 0 32px;
+    gap: 36px;
+  }
+  .header .logo {
+    width: 256px;
+    height: 14px;
+  }
   .header .headerright {
     display: none; /* 모바일에서는 기본적으로 숨김 */
   }
-
+  .header .header_button{
+    display: flex;
+    flex-direction: row;
+    gap: 27px;
+    align-items: center;
+  }
   /* 햄버거 메뉴 버튼 보이기 */
   .header .hamburger-button {
+    display: block; /* 작은 화면에서만 보이도록 */
+    color: white;
+    width: 23px !important;
+  }
+  /* 햄버거 메뉴 버튼 보이기 */
+  .header .wallet-button {
     display: block; /* 작은 화면에서만 보이도록 */
     color: white;
   }
@@ -68,10 +99,22 @@
   .header .headerright {
     display: none; /* 태블릿에서도 기본적으로 숨김 */
   }
-
+  .header .header_button{
+    display: flex;
+    flex-direction: row;
+    gap: 27px;
+    align-items: center;
+  }
   /* 햄버거 메뉴 버튼 보이기 */
   .header .hamburger-button {
     display: block; /* 작은 화면에서만 보이도록 */
+    color: white;
+    width: 23px !important;
+  }
+  /* 햄버거 메뉴 버튼 보이기 */
+  .header .wallet-button {
+    display: block; /* 작은 화면에서만 보이도록 */
+    color: white;
   }
 
   /* 메뉴 항목을 햄버거 메뉴에서 보이게 하기 */
