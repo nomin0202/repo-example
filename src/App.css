@@ -16,7 +16,7 @@
 }
 /* Header.js 에 필요한것들 */
 body {
-  font-family: "Pretendard";
+  font-family: "Pretendard" !important;
   margin: 0;
   padding: 0;
 }

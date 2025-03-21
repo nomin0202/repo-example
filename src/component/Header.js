@@ -1,6 +1,7 @@
+/* eslint-disable */
 import React, { useState, useEffect } from "react";
 import { Box, Typography, IconButton, Menu, MenuItem, Divider } from "@mui/material";
-import { Email, Menu as MenuIcon } from "@mui/icons-material";
+import {Menu as MenuIcon } from "@mui/icons-material";
 import logo from "../img/caliverse_logo.png";
 import star from "../img/Vector.png";
 import sum from "../img/sum.png";

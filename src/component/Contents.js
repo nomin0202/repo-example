@@ -24,22 +24,17 @@ function Contents() {
                 <span style={{ whiteSpace: 'nowrap' }}>CALIVERSE</span> {/* CALIVERSE는 한 줄로 유지 */}
                 <span className='pioneer-text'>PIONEER NFT</span> {/* PIONEER NFT는 아래로 내려감 */}
             </Typography>
-            <Typography sx={{
-                color: '#9A9A9A',
-                fontSize: '16px',
-                letterSpacing: '0',
-                fontWeight: '500',
-                margin: '24px 20px 0 20px'
-            }}>
-                CALIVERSE Pioneer NFT는 칼리버스를 개척할 선구자와 크리에이터들을 지원하기 위한 NFT 입니다.
-            </Typography>
+            <div className="maindesc">
+                <Typography> CALIVERSE Pioneer NFT는 칼리버스를 개척할 </Typography>
+                <Typography sx={{marginLeft:'4px'}}> 선구자와 크리에이터들을 지원하기 위한 NFT 입니다.</Typography>
+            </div>
             <div className='leftright'>
-                <img src={left} className='imgs'/>
-                <img src={right} className='imgs'/>
+                <img src={left} className='imgs' />
+                <img src={right} className='imgs' />
             </div>
             <div className='schedule'>
-                <Typography sx={{ fontSize: '23px', fontWeight: '800', letterSpacing: '0.1em', marginTop: '96px', color: 'white' }}>
-                    Minting Event Schedule
+                <Typography className='schedule_title'>
+                    MINTING EVENT SCHEDULE
                 </Typography>
                 <div className='date'>
                     <Typography className='datetext' style={{ color: 'white' }}>시작 <span style={{ color: '#8E8E8E' }}>2024년 09월 23일 (월) 17:00 (KST)</span></Typography>
