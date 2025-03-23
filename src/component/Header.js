@@ -42,7 +42,7 @@ function Header() {
         <div className="header">
             <img src={logo} className="logo" alt="logo" />
             <div className="headerright">
-                <Box sx={{ display: "flex", gap: "25px", alignItems: "center", fontSize: "16px", color: "white" }}>
+                <Box sx={{ display: "flex", gap: "25px", alignItems: "center", fontSize: "16px", color: "white", fontWeight: '600' }}>
                     <Box sx={{ display: "flex", gap: "25px" }}>
                         <p>About</p>
                         <p>Portal</p>
@@ -86,7 +86,7 @@ function Header() {
                         }}
                     >
                         <img className="headericon" src={wallet} style={{ width: "16px", height: "14px" }} alt="wallet" />
-                        <Typography sx={{ overflow: "hidden", whiteSpace: "nowrap", textOverflow: "ellipsis" }}>
+                        <Typography sx={{ overflow: "hidden", whiteSpace: "nowrap", textOverflow: "ellipsis", fontWeight:'600' }}>
                             {email}
                         </Typography>
                         <img className="headericon" src={sum} style={{ width: "8px", height: "5px", paddingLeft: "7px" }} alt="sum" />

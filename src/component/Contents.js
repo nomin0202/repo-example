@@ -159,7 +159,7 @@ function Contents() {
                 <div className='dlrjs'>
                     <div className="module-border-wrap">
                         <div className="module">
-                            <p style={{ fontSize: '25px', fontWeight: '600' }}>
+                            <p className='ckarkwkrur_title'>
                                 참가자격
                             </p>
                             <p className='module_text1'>
@@ -167,7 +167,7 @@ function Contents() {
                             </p>
                             <p className='module_text2'>
                                 These portraits encapsulate the spirit of those trailblazers who
-                                constantly seek new possibilities, never content with the present.
+                                   constantly seek new possibilities, never content with the present.
                             </p>
                         </div>
                     </div>
