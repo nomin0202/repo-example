@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.72b9109c.css",
-    "main.js": "/static/js/main.ee52fed6.js",
-    "static/js/453.ed3810f9.chunk.js": "/static/js/453.ed3810f9.chunk.js",
-    "static/media/background.png": "/static/media/background.f335a61934cf91404a02.png",
-    "static/media/left.png": "/static/media/left.38ad6d4e3bce1069bbce.png",
-    "static/media/PretendardVariable.woff2": "/static/media/PretendardVariable.2bc582461caf4e05b51d.woff2",
-    "static/media/right.png": "/static/media/right.e08165a70bcd9e0af2f7.png",
-    "static/media/OutfitVariableFont_wght1.ttf": "/static/media/OutfitVariableFont_wght1.7d17abd5c1a78120ae80.ttf",
-    "static/media/FuturaCyrillicMedium.ttf": "/static/media/FuturaCyrillicMedium.8c2b829a94e8be079974.ttf",
-    "static/media/caliverse_logo.png": "/static/media/caliverse_logo.a89f7c3eac29eb9b1591.png",
-    "index.html": "/index.html",
-    "main.72b9109c.css.map": "/static/css/main.72b9109c.css.map",
-    "main.ee52fed6.js.map": "/static/js/main.ee52fed6.js.map",
-    "453.ed3810f9.chunk.js.map": "/static/js/453.ed3810f9.chunk.js.map"
+    "main.css": "/nomin0202/repo-example.git/static/css/main.88549ff7.css",
+    "main.js": "/nomin0202/repo-example.git/static/js/main.20bfb018.js",
+    "static/js/453.ed3810f9.chunk.js": "/nomin0202/repo-example.git/static/js/453.ed3810f9.chunk.js",
+    "static/media/background.png": "/nomin0202/repo-example.git/static/media/background.f335a61934cf91404a02.png",
+    "static/media/left.png": "/nomin0202/repo-example.git/static/media/left.38ad6d4e3bce1069bbce.png",
+    "static/media/PretendardVariable.woff2": "/nomin0202/repo-example.git/static/media/PretendardVariable.2bc582461caf4e05b51d.woff2",
+    "static/media/right.png": "/nomin0202/repo-example.git/static/media/right.e08165a70bcd9e0af2f7.png",
+    "static/media/left_mobile.png": "/nomin0202/repo-example.git/static/media/left_mobile.6342fdc8d0621b6e6bc6.png",
+    "static/media/right_mobile.png": "/nomin0202/repo-example.git/static/media/right_mobile.bd59b62cfcc584326048.png",
+    "static/media/OutfitVariableFont_wght1.ttf": "/nomin0202/repo-example.git/static/media/OutfitVariableFont_wght1.7d17abd5c1a78120ae80.ttf",
+    "static/media/FuturaCyrillicMedium.ttf": "/nomin0202/repo-example.git/static/media/FuturaCyrillicMedium.8c2b829a94e8be079974.ttf",
+    "static/media/caliverse_logo.png": "/nomin0202/repo-example.git/static/media/caliverse_logo.a89f7c3eac29eb9b1591.png",
+    "index.html": "/nomin0202/repo-example.git/index.html",
+    "main.88549ff7.css.map": "/nomin0202/repo-example.git/static/css/main.88549ff7.css.map",
+    "main.20bfb018.js.map": "/nomin0202/repo-example.git/static/js/main.20bfb018.js.map",
+    "453.ed3810f9.chunk.js.map": "/nomin0202/repo-example.git/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.72b9109c.css",
-    "static/js/main.ee52fed6.js"
+    "static/css/main.88549ff7.css",
+    "static/js/main.20bfb018.js"
   ]
 }
