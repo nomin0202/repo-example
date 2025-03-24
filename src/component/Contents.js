@@ -17,6 +17,7 @@ function Contents() {
             <p className='maintitle'>
                 <span style={{ whiteSpace: 'nowrap' }}>CALIVERSE</span> {/* CALIVERSE는 한 줄로 유지 */}
                 <span className='pioneer-text'>PIONEER NFT</span> {/* PIONEER NFT는 아래로 내려감 */}
+                <span className='mo-pioneer-text'>PIONEER COLLECTIVE</span> {/* 모바일에서 보여야 할 텍스트*/}
             </p>
 
             <div className="maindesc1">
@@ -25,11 +26,12 @@ function Contents() {
             </div>
             <div className="maindesc2">
                 <p>
-                    CALIVERSE Pioneer Collective is an NFT collection designed to
-                    support and empower pioneers and creators of CALIVERSE. Holding a
-                    CALIVERSE Pioneer Collective NFT doesn't just grant access to this
-                    brand-new universe; it offers an exclusive sneak peek at the exciting
-                    lineup of future services.
+                    CALIVERSE Pioneer Collective is an NFT collection designed <br/>
+                    to support and empower pioneers and creators of <br/>
+                    CALIVERSE. Holding a CALIVERSE Pioneer Collective NFT<br/> 
+                    doesn't just grant access to this brand-new universe; it offers <br/>
+                    an exclusive sneak peek at the exciting lineup of future <br/>
+                    services.
                 </p>
             </div>
             <div className='leftright'>
@@ -37,12 +39,15 @@ function Contents() {
                 <img src={right} className='imgs' />
             </div>
             <div className='schedule'>
-                <p className='schedule_title'>
+                <p className='schedule_title1'>
                     MINTING EVENT SCHEDULE
                 </p>
+                <p className='schedule_title2'>
+                    Minting Event Schedule
+                </p>
                 <div className='date'>
-                    <p className='datetext' >시작 <span style={{ color: '#8E8E8E' }}>2024년 09월 23일 (월) 17:00 (KST)</span></p>
-                    <p className='datetext' >종료 <span style={{ color: '#8E8E8E' }}>2024년 12월 23일 (월) 17:00 (KST)</span></p>
+                    <p className='datetext' >시작 <span style={{ color: '#8E8E8E' ,padding:'6px'}}>2024년 9월 23일 (월) 17:00 (KST)</span></p>
+                    <p className='datetext' >종료 <span style={{ color: '#8E8E8E' ,padding:'5px'}}>2024년 12월 23일 (월) 17:00 (KST)</span></p>
                 </div>
                 <Button sx={{
                     width: 293,
@@ -63,7 +68,7 @@ function Contents() {
                 <div className='qkdqjq_box'>
                     <p className='qkdqjq'>
                         <span>CALIVERSE PIONEER NFT</span>
-                        <span className='pioneer-text'>민팅 참여방법</span>
+                        <span className='qkdqjq_second'>민팅 참여방법</span>
                     </p>
                 </div>
                 <div className="boxcontainer">
@@ -85,7 +90,7 @@ function Contents() {
                                         </div>
                                         <div className='desc2'>
                                             <p>
-                                                민팅 시 가스비가 발생됩니다.  충분한 이더{"(ETH)"}를 넣은 후 민팅을 진행해 주세요.
+                                                <br/>민팅 시 가스비가 발생됩니다.  충분한 이더{"(ETH)"}를 넣은 후 민팅을 진행해<br/>주세요.
                                             </p>
                                         </div>
                                     </div>
@@ -108,7 +113,7 @@ function Contents() {
                                             </p>
                                         </div>
                                         <div className='desc2'>
-                                            <p>
+                                            <p><br/>
                                                 민팅 기간이 지나면 민팅이 불가하니 유의해 주세요
                                             </p>
                                         </div>
@@ -118,7 +123,7 @@ function Contents() {
                         </Box>
                         <Box className="boxes">
                             <div className='icon_text'>
-                                <img className='icon' src={icon3} />
+                                <img className='icon2' src={icon3} />
                                 <div className='titledesc'>
                                     <div className='title'>
                                         <p>
@@ -137,7 +142,7 @@ function Contents() {
                         </Box>
                         <Box className="boxes">
                             <div className='icon_text'>
-                                <img className='icon' src={icon4} />
+                                <img className='icon2' src={icon4} />
                                 <div className='titledesc'>
                                     <div className='title'>
                                         <p>

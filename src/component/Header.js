@@ -1,13 +1,14 @@
 /* eslint-disable */
 import React, { useState, useEffect } from "react";
 import { Box, Typography, IconButton, Menu, MenuItem, Divider } from "@mui/material";
-import { Menu as MenuIcon } from "@mui/icons-material";
 import logo from "../img/caliverse_logo.png";
+import mobile_logo from "../img/mobile_logo.png";
 import star from "../img/Vector.png";
 import sum from "../img/sum.png";
 import wallet from "../img/wallet.png";
 import globe from "../img/wlrnqhs.png";
 import headerwallet from "../img/wallet_icon.png";
+import hamburger from "../img/ham.png";
 
 import "../../src/App.css";
 import "../../src/css/Header.css";
@@ -41,6 +42,7 @@ function Header() {
     return (
         <div className="header">
             <img src={logo} className="logo" alt="logo" />
+            <img src={mobile_logo} className="mobile_logo" alt="mobile_logo" />
             <div className="headerright">
                 <Box sx={{ display: "flex", gap: "25px", alignItems: "center", fontSize: "16px", color: "white", fontWeight: '600' }}>
                     <Box sx={{ display: "flex", gap: "25px" }}>
@@ -86,7 +88,7 @@ function Header() {
                         }}
                     >
                         <img className="headericon" src={wallet} style={{ width: "16px", height: "14px" }} alt="wallet" />
-                        <Typography sx={{ overflow: "hidden", whiteSpace: "nowrap", textOverflow: "ellipsis", fontWeight:'600' }}>
+                        <Typography sx={{ overflow: "hidden", whiteSpace: "nowrap", textOverflow: "ellipsis", fontWeight: '600' }}>
                             {email}
                         </Typography>
                         <img className="headericon" src={sum} style={{ width: "8px", height: "5px", paddingLeft: "7px" }} alt="sum" />
@@ -102,15 +104,11 @@ function Header() {
                 </div>
             </div>
             <div className="header_button">
-                <div className="wallet-button">
-                    <div onClick={handleMenuClick}>
-                        <img src={headerwallet} style={{width:'18px', }}/>
-                    </div>
+                <div className="wallet-button" onClick={handleMenuClick} style={{ width: '25px', height: '20px' }}>
+                    <img src={headerwallet} style={{ width: '100%' }} />
                 </div>
-                <div className="hamburger-button">
-                    <div onClick={handleMenuClick}>
-                        <MenuIcon/>
-                    </div>
+                <div className="hamburger-button" onClick={handleMenuClick} style={{ width: '23px', height: '20px' }}>
+                    <img src={hamburger} style={{ width: '100%' }} />
                 </div>
             </div>
             <Menu anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleMenuClose}>
