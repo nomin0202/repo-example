@@ -27,7 +27,7 @@
 }
 .header .headerright {
   display: flex;
-  gap: 27px;
+  /* gap: 27px; */
   font-size: 16px;
   align-items: center;
   color: white;
@@ -35,9 +35,9 @@
 .header .language {
   display: flex;
   flex-direction: row;
-  gap: 10px;
   align-items: center;
   font-family: "Pretendard"; /* 로드한 폰트를 사용 */
+  margin-left: 26px;
 }
 .header .headericon {
   width: 18px;
@@ -50,7 +50,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 6px;
+  /* gap: 6px; */
 }
 
 /* 모바일 (600px 이하) */

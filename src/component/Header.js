@@ -9,7 +9,7 @@ import wallet from "../img/wallet.png";
 import globe from "../img/wlrnqhs.png";
 import headerwallet from "../img/wallet_icon.png";
 import hamburger from "../img/ham.png";
-
+import sum2 from "../img/layer1.png";
 import "../../src/App.css";
 import "../../src/css/Header.css";
 
@@ -44,15 +44,20 @@ function Header() {
             <img src={logo} className="logo" alt="logo" />
             <img src={mobile_logo} className="mobile_logo" alt="mobile_logo" />
             <div className="headerright">
-                <Box sx={{ display: "flex", gap: "25px", alignItems: "center", fontSize: "16px", color: "white", fontWeight: '600' }}>
-                    <Box sx={{ display: "flex", gap: "25px" }}>
+                <Box sx={{ 
+                    display: "flex", 
+                    alignItems: "center", 
+                    fontSize: "16px", 
+                    color: "white", 
+                    fontWeight: '600' }}>
+                    <Box sx={{ display: "flex", gap:'25px' }}>
                         <p>About</p>
                         <p>Portal</p>
                         <p>NFT</p>
                     </Box>
-                    <Divider sx={{ width: "2px", height: "16px", backgroundColor: "#fff" }} />
+                    <Divider sx={{ width: "2px", height: "16px", backgroundColor: "#fff", marginLeft:'27px'}} />
                     <div className="Myinventory">
-                        <img className="headericon" src={star} style={{ width: "17px", height: "16px" }} alt="star" />
+                        <img className="headericon" src={star} style={{ width: "17px", height: "16px",marginLeft:'30.5px' }} alt="star" />
                         <Typography
                             sx={{
                                 background: "linear-gradient(to bottom, #22EE9F 25%, #00C8D4 100%)",
@@ -60,13 +65,14 @@ function Header() {
                                 color: "transparent",
                                 fontFamily: "Pretendard",
                                 fontWeight: "600",
-                                whiteSpace: 'nowrap'
+                                whiteSpace: 'nowrap',
+                                marginLeft:'10px'
                             }}>
                             My Inventory
                         </Typography>
                     </div>
                 </Box>
-                <div className="emailbutton" style={{ width: '212px' }}>
+                <div className="emailbutton" style={{ width: '212px', marginLeft:'27px'}}>
                     <Box
                         sx={{
                             width: "auto",
@@ -76,31 +82,31 @@ function Header() {
                             color: "white",
                             display: "flex",
                             flexDirection: "row",
-                            justifyContent: "center",
+                            // justifyContent: "center",
                             border: "1px solid white",
                             borderRadius: 100,
                             alignItems: "center",
-                            gap: "6px",
-                            padding: "0 10px",
+                            // gap: "6px",
+                            // padding: "0 10px",
                             overflow: "hidden",
                             whiteSpace: "nowrap",
                             textOverflow: "ellipsis",
                         }}
                     >
-                        <img className="headericon" src={wallet} style={{ width: "16px", height: "14px" }} alt="wallet" />
-                        <Typography sx={{ overflow: "hidden", whiteSpace: "nowrap", textOverflow: "ellipsis", fontWeight: '600' }}>
+                        <img className="headericon" src={wallet} style={{ width: "16px", height: "14px" ,marginLeft:'21px'}} alt="wallet" />
+                        <Typography sx={{ overflow: "hidden", whiteSpace: "nowrap", textOverflow: "ellipsis", fontWeight: '600', marginLeft:'10px'}}>
                             {email}
                         </Typography>
-                        <img className="headericon" src={sum} style={{ width: "8px", height: "5px", paddingLeft: "7px" }} alt="sum" />
+                        <img className="headericon" src={sum} style={{ width: "8px", height: "5px", marginLeft:'14px', marginRight:'25px' }} alt="sum" />
                     </Box>
                 </div>
 
                 <div className="language">
                     <img src={globe} className="headericon" alt="globe" />
-                    <Typography sx={{ fontSize: "13px", fontFamily: "Pretendard", fontWeight: "800", letterSpacing: "2px" }}>
+                    <Typography sx={{ fontSize: "13px", fontFamily: "Pretendard", fontWeight: "800", letterSpacing: "2px", marginLeft:'10px'}}>
                         KR
                     </Typography>
-                    <img src={sum} className="headericon" style={{ width: "7px", height: "5px" }} alt="sum" />
+                    <img src={sum2} className="headericon" style={{ width: "6px", height: "3px", marginLeft: '8.62px' }} alt="sum2" />
                 </div>
             </div>
             <div className="header_button">

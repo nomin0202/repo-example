@@ -2,15 +2,9 @@
 import React from 'react';
 import '../App.css';
 import '../css/Contents.css';
-import { Box, Button } from '@mui/material';
 import left from '../img/left.png';
 import right from '../img/right.png';
-import left_mobile from '../img/left_mobile.png';
-import right_mobile from '../img/right_mobile.png';
-import icon1 from '../img/icon1.png';
-import icon2 from '../img/icon2.png';
-import icon3 from '../img/icon3.png';
-import icon4 from '../img/icon4.png';
+import Boxcontainer from './Box_container';
 function Contents() {
     return (
         <div className='content'>
@@ -49,20 +43,9 @@ function Contents() {
                     <p className='datetext' >시작 <span style={{ color: '#8E8E8E' ,padding:'6px'}}>2024년 9월 23일 (월) 17:00 (KST)</span></p>
                     <p className='datetext' >종료 <span style={{ color: '#8E8E8E' ,padding:'5px'}}>2024년 12월 23일 (월) 17:00 (KST)</span></p>
                 </div>
-                <Button sx={{
-                    width: 293,
-                    height: 58,
-                    color: '#22EE9F',
-                    border: '1px solid #22EEBD',
-                    background: 'rgba(0, 0, 0, 0.30)',
-                    boxShadow: '4px 4px 8px -1px rgba(0,0,0,0.25)',
-                    color: '#22ee9f',
-                    fontSize: 20,
-                    fontWeight: '800',
-                    fontFamily: 'Pretendard !important'
-                }}>
+                <div className='gradientbutton'>
                     민팅 준비중
-                </Button>
+                </div>
             </div>
             <div className='box'>
                 <div className='qkdqjq_box'>
@@ -71,96 +54,7 @@ function Contents() {
                         <span className='qkdqjq_second'>민팅 참여방법</span>
                     </p>
                 </div>
-                <div className="boxcontainer">
-                    <div className='gadna'>
-                        <Box className="boxes">
-                            <div className='icon_text'>
-                                <img className='icon' src={icon1} />
-                                <div className='titledesc'>
-                                    <div className='title'>
-                                        <p>
-                                            SIGN IN & VERIFY
-                                        </p>
-                                    </div>
-                                    <div className='desc_'>
-                                        <div className='desc1'>
-                                            <p >
-                                                회원 가입 후  당첨된 지갑 주소를 연결해 주세요.
-                                            </p>
-                                        </div>
-                                        <div className='desc2'>
-                                            <p>
-                                                <br/>민팅 시 가스비가 발생됩니다.  충분한 이더{"(ETH)"}를 넣은 후 민팅을 진행해<br/>주세요.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </Box>
-                        <Box className="boxes">
-                            <div className='icon_text'>
-                                <img className='icon' src={icon2} />
-                                <div className='titledesc'>
-                                    <div className='title'>
-                                        <p>
-                                            CHECK & SCHEDULE
-                                        </p>
-                                    </div>
-                                    <div className='desc_'>
-                                        <div className='desc1'>
-                                            <p >
-                                                Event Schedule을 확인해 주세요.
-                                            </p>
-                                        </div>
-                                        <div className='desc2'>
-                                            <p><br/>
-                                                민팅 기간이 지나면 민팅이 불가하니 유의해 주세요
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </Box>
-                        <Box className="boxes">
-                            <div className='icon_text'>
-                                <img className='icon2' src={icon3} />
-                                <div className='titledesc'>
-                                    <div className='title'>
-                                        <p>
-                                            MINT
-                                        </p>
-                                    </div>
-                                    <div className='desc_'>
-                                        <div className='desc1'>
-                                            <p >
-                                                {'<Mint>'} 버튼을 클릭 후 민팅을 진행해 주세요.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </Box>
-                        <Box className="boxes">
-                            <div className='icon_text'>
-                                <img className='icon2' src={icon4} />
-                                <div className='titledesc'>
-                                    <div className='title'>
-                                        <p>
-                                            COMPLETE
-                                        </p>
-                                    </div>
-                                    <div className='desc_'>
-                                        <div className='desc1'>
-                                            <p >
-                                                {"[My Inventory]"}에서 민팅된 NFT를 확인해 주세요.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </Box>
-                    </div>
-                </div>
+                <Boxcontainer/>
                 <div className='dlrjs'>
                     <div className="module-border-wrap">
                         <div className="module">

@@ -3,8 +3,6 @@ import React from 'react';
 import './App.css';
 import Header from './component/Header';
 import Contents from './component/Contents';
-// import Footer from './component/Footer';
-// import PackingList from './component/PackingList';
 
 function App() {
   return (
@@ -12,8 +10,6 @@ function App() {
       <div className='bg-container'>
         <Header />
         <Contents />
-        {/* <Footer/> 
-        <PackingList/> */}
       </div>
     </div>
   );
