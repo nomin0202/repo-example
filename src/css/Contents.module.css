@@ -11,7 +11,7 @@ p {
   flex-direction: column;
   width: 100%;
   font-family: "Pretendard";
-  margin-top: 121px;
+  margin-top: 100px;
 }
 .content .maintitle {
   color: white;
@@ -20,13 +20,10 @@ p {
   font-family: "futura";
   text-align: center;
 }
-/* .pioneer-text{
-  display: block;
-} */
 .content .qkdqjq_second {
   display: block;
 }
-.content .mo-pioneer-text {
+.content .mo_pioneer_text {
   display: none;
 }
 .content .maindesc1 {
@@ -157,7 +154,7 @@ p {
   width: 100%;
   margin-top: 60px;
 }
-.content .module-border-wrap {
+.content .module_border_wrap {
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -311,13 +308,13 @@ p {
     align-content: center;
     line-height: 30px;
   }
-  .content .pioneer-text {
+  .content .pioneer_text {
     display: none; /* 화면이 좁으면 아래로 내려가도록 설정 */
   }
   .content .qkdqjq_second {
     display: block;
   }
-  .content .mo-pioneer-text {
+  .content .mo_pioneer_text {
     display: block;
   }
   .content .dlrjs {
@@ -326,7 +323,7 @@ p {
     width: 90%;
     margin-top: 70px;
   }
-  .content .module-border-wrap {
+  .content .module_border_wrap {
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -430,7 +427,7 @@ p {
     width: 90%;
     margin-top: 60px;
   }
-  .content .module-border-wrap {
+  .content .module_border_wrap {
     display: flex;
     justify-content: center;
     margin: 0 auto;

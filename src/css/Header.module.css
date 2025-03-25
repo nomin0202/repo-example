@@ -11,10 +11,10 @@
 .header .header_button {
   display: none;
 }
-.header .hamburger-button {
+.header .hamburger_button {
   display: none;
 }
-.header .wallet-button {
+.header .wallet_button {
   display: none;
 }
 .header .logo {
@@ -83,11 +83,11 @@
     align-items: flex-end;
   }
   /* 햄버거 메뉴 버튼 보이기 */
-  .header .hamburger-button {
+  .header .hamburger_button {
     display: block; /* 작은 화면에서만 보이도록 */
   }
   /* 햄버거 메뉴 버튼 보이기 */
-  .header .wallet-button {
+  .header .wallet_button {
     display: block; /* 작은 화면에서만 보이도록 */
   }
 
@@ -114,7 +114,7 @@
     display: block; /* 작은 화면에서만 보이도록 */
   }
   /* 햄버거 메뉴 버튼 보이기 */
-  .header .wallet-button {
+  .header .wallet_button {
     display: block; /* 작은 화면에서만 보이도록 */
   }
 
