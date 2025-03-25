@@ -44,20 +44,21 @@ function Header() {
             <img src={logo} className={hhh.logo} alt="logo" />
             <img src={mobile_logo} className={hhh.mobile_logo} alt="mobile_logo" />
             <div className={hhh.headerright}>
-                <Box sx={{ 
-                    display: "flex", 
-                    alignItems: "center", 
-                    fontSize: "16px", 
-                    color: "white", 
-                    fontWeight: '600' }}>
-                    <Box sx={{ display: "flex", gap:'25px' }}>
+                <Box sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    fontSize: "16px",
+                    color: "white",
+                    fontWeight: '600'
+                }}>
+                    <Box sx={{ display: "flex", gap: '25px' }}>
                         <p>About</p>
                         <p>Portal</p>
                         <p>NFT</p>
                     </Box>
-                    <Divider sx={{ width: "2px", height: "16px", backgroundColor: "#fff", marginLeft:'27px'}} />
+                    <Divider sx={{ width: "2px", height: "16px", backgroundColor: "#fff", marginLeft: '27px' }} />
                     <div className={hhh.Myinventory}>
-                        <img className={hhh.headericon} src={star} style={{ width: "17px", height: "16px",marginLeft:'30.5px' }} alt="star" />
+                        <img className={hhh.headericon} src={star} style={{ width: "17px", height: "16px", marginLeft: '30.5px' }} alt="star" />
                         <Typography
                             sx={{
                                 background: "linear-gradient(to bottom, #22EE9F 25%, #00C8D4 100%)",
@@ -66,13 +67,13 @@ function Header() {
                                 fontFamily: "Pretendard",
                                 fontWeight: "600",
                                 whiteSpace: 'nowrap',
-                                marginLeft:'10px'
+                                marginLeft: '10px'
                             }}>
                             My Inventory
                         </Typography>
                     </div>
                 </Box>
-                <div className={hhh.emailbutton} style={{ width: '212px', marginLeft:'27px'}}>
+                <div className={hhh.emailbutton} style={{ width: '212px', marginLeft: '27px' }}>
                     <Box
                         sx={{
                             width: "auto",
@@ -88,20 +89,20 @@ function Header() {
                             overflow: "hidden",
                             whiteSpace: "nowrap",
                             textOverflow: "ellipsis",
-                            
+
                         }}
                     >
-                        <img className={hhh.headericon} src={wallet} style={{ width: "16px", height: "14px" ,marginLeft:'21px'}} alt="wallet" />
-                        <Typography sx={{ overflow: "hidden", whiteSpace: "nowrap", textOverflow: "ellipsis", fontWeight: '600', marginLeft:'10px', fontFamily:'Pretendard !important'}}>
+                        <img className={hhh.headericon} src={wallet} style={{ width: "16px", height: "14px", marginLeft: '21px' }} alt="wallet" />
+                        <Typography sx={{ overflow: "hidden", whiteSpace: "nowrap", textOverflow: "ellipsis", fontWeight: '600', marginLeft: '10px', fontFamily: 'Pretendard !important' }}>
                             {email}
                         </Typography>
-                        <img className={hhh.headericon} src={sum} style={{ width: "8px", height: "5px", marginLeft:'14px', marginRight:'25px' }} alt="sum" />
+                        <img className={hhh.headericon} src={sum} style={{ width: "8px", height: "5px", marginLeft: '14px', marginRight: '25px' }} alt="sum" />
                     </Box>
                 </div>
 
                 <div className={hhh.language}>
                     <img src={globe} className={hhh.headericon} alt="globe" />
-                    <Typography sx={{ fontSize: "13px", fontFamily: "Pretendard", fontWeight: "800", letterSpacing: "2px", marginLeft:'10px'}}>
+                    <Typography sx={{ fontSize: "13px", fontFamily: "Pretendard", fontWeight: "800", letterSpacing: "2px", marginLeft: '10px' }}>
                         KR
                     </Typography>
                     <img src={sum2} className={hhh.headericon} style={{ width: "6px", height: "3px", marginLeft: '8.62px' }} alt="sum2" />

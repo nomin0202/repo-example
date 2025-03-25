@@ -21,6 +21,9 @@ body {
   padding: 0;
   -webkit-font-smoothing: antialiased; /* Mac에서 더 선명하게 */
   -moz-osx-font-smoothing: grayscale; /* Firefox 대응 */
+  word-break: keep-all;
+  overflow-wrap: normal;
+  
 }
 @media (max-width: 600px) {
   .bg-container {

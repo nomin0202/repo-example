@@ -1,3 +1,14 @@
+
+# 깃허브 계정이 있는 경우 
+1. git clone 'https://github.com/nomin0202/repo-example.git'
+2. npm install
+3. npm run build
+4. npm run start
+
+
+만약 깃허브 계정이 없는 경우 깃허브 계정 설정을 한 후에 위 절차대로 실행해야 한다.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
