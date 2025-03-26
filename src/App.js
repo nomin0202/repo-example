@@ -4,7 +4,7 @@ import './App.css';
 import Header from './component/Header';
 import Contents from './component/Contents';
 import PackingList from './component/PackingList';
-import Test from './component/PackingList';
+import Test from './component/Test';
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
         <Header />
         <Contents />
         {/* <PackingList/> */}
-        <Test />
+        {/* <Test /> */}
       </div>
     </div>
   );

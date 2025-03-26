@@ -1,3 +1,4 @@
+/* eslint-disable */
 // 1-----------------------------
 class Person1 {
   constructor(name) {
