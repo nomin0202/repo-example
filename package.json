@@ -22,7 +22,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy" : "npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
@@ -43,7 +43,10 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://github.com/nomin0202/repo-example.git"
-
-  
+  "homepage": "https://github.com/nomin0202/repo-example.git",
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-plugin-react": "^7.37.4",
+    "prettier": "^3.5.3"
+  }
 }
