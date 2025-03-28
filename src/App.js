@@ -1,8 +1,8 @@
 /* eslint-disable */
 import React from "react";
 import "./App.css";
-import Header from "./component/Header.tsx";
-import Contents from "./component/Contents.tsx";
+import Header from "./component/Header";
+import Contents from "./component/Contents";
 import Cursor from "./component/Cursor.tsx";
 
 function App() {

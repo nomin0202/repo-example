@@ -6,7 +6,7 @@ import left from "../img/left.png";
 import right from "../img/right.png";
 import left_mobile from "../img/left_mobile.png";
 import right_mobile from "../img/right_mobile.png";
-import Boxcontainer from "./Box_container.tsx";
+import Boxcontainer from "./Box_container";
 import { motion } from "motion/react";
 
 function Contents() {
